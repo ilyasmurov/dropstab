@@ -5,16 +5,6 @@ import Highcharts from "highcharts/highstock";
 import styles from "./styles.scss";
 
 const Highchars = ({ series }) => {
-  const currencyAxis = {
-    BTC: 2,
-    USD: 2,
-    ETH: 2,
-    volume24h: 0,
-    marketCapUsd: 1
-  };
-
-  console.log(">> series: ", series);
-
   const _series = Object.keys(series).map(item => {
     return {
       name: item,
@@ -24,8 +14,6 @@ const Highchars = ({ series }) => {
       yAxis: item
     };
   });
-
-  console.log("series: ", _series);
 
   const options = {
     chart: {
@@ -118,15 +106,6 @@ const Highchars = ({ series }) => {
       enabled: true,
       x: 0
     }
-    // plotOptions: {
-    //   series: {
-    //     events: {
-    //       legendItemClick: function(a) {
-    //         return a.target.name !== "volume24h";
-    //       }
-    //     }
-    //   }
-    // }
   };
 
   return (
