@@ -1,0 +1,20 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:global(#root) {
+  width: 100%;
+  min-height: 100vh;
+}
+
+:global(.highcharts-label-box) {
+  stroke: #ddd;
+}
