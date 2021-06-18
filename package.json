@@ -27,7 +27,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "highcharts": "^8.0.2",
+    "highcharts": "^9.0.0",
     "highcharts-react-official": "^3.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
